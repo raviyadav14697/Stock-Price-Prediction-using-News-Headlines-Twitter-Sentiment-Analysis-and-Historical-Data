@@ -251,7 +251,7 @@
           <div class="tab-pane fade show active" id="nav-news" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="row">
                   <div class="col-md-8">
-                  <img src="img/" alt="Hist_info_lstm_pic" />
+                  <img src="img/info_news_graph.PNG" alt="info_news_graph" />
                   </div>
                   <div class="col-md-4">
                     <img src="img/infosys_news_Accuracy.PNG" alt="accuracy" />
@@ -271,7 +271,7 @@
           <div class="tab-pane fade" id="nav-twitter" role="tabpanel" aria-labelledby="nav-contact-tab">
                <div class="row">
                   <div class="col-md-8">
-                  <img src="img/" alt="Hist_info_lstm_pic" />
+                  <img src="img/Anfo_tweet.png" alt="Hist_info_lstm_pic" />
                 </div>
                   <div class="col-md-4">
                     <img src="img/" alt="accuracy" />
