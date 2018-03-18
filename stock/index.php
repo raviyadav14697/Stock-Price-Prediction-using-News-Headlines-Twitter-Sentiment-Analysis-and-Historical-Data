@@ -36,7 +36,7 @@
       $(document).ready(function(){
        
           $.ajax({
-             url:"csv/infosys.csv",
+             url:"csv/INFY.csv",
              dataType:"text",
              success:function(data)
              {
@@ -59,12 +59,16 @@
                 }
 
                 if(arr_2d[0][1] < arr_2d[1][1] && arr_2d[1][1] < arr_2d[2][1] && arr_2d[2][1] < arr_2d[3][2])
-                   $('#recommend').append(' so we recommend you to purchase them! and keep till any future Update');
+                   $('#recommend').append(' <br><br>1) So we recommend you to purchase them! and keep till any future Update');
+                else
+                  $('#recommend').append(' <br><br>1) So we recommend you to purchase General Motors stocks! and keep till any future Update');
 
                 
                 
                 if(arr_2d[0][1] > arr_2d[1][1] && arr_2d[1][1] > arr_2d[2][1] && arr_2d[2][1] > arr_2d[3][2])
-                   $('#not_recommend').append(' so we DO NOT recommend you to purchase Infosys stock!  ');
+                   $('#not_recommend').append(' <br><br>1) So we DO NOT recommend you to purchase infosys stock!  ');
+                else
+                  $('#not_recommend').append(' <br><br>1) So we DO NOT recommend you to purchase FORD stock!  ');
 
 
               }
@@ -89,6 +93,45 @@
             <span class="nav-link-text">Dashboard</span>
           </a>
         </li>
+
+          <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Dashboard">
+          <a class="nav-link" href="INFOSYS.php">
+            <i class="fa fa-fw fa-bank"></i>
+            <span class="nav-link-text">INFOSYS</span>
+          </a>
+        </li>
+         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" id="NSE"  href="TCS.php">
+            <i class="fa fa-fw fa-bank"></i>
+            <span class="nav-link-text">TCS</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" id="TCS"  href="GM.php">
+            <i class="fa fa-fw fa-bank"></i>
+            <span class="nav-link-text">GM</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" id="TCS"  href="Ford.php">
+            <i class="fa fa-fw fa-bank"></i>
+            <span class="nav-link-text">Ford</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" id="TCS"  href="TESLA.php">
+            <i class="fa fa-fw fa-bank"></i>
+            <span class="nav-link-text">TESLA</span>
+          </a>
+        </li>
+        
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" id="TCS"  href="VW.php">
+            <i class="fa fa-fw fa-bank"></i>
+            <span class="nav-link-text">VW</span>
+          </a>
+        </li>
+
         <!--
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
           <a class="nav-link" href="charts.php">
@@ -379,7 +422,33 @@
               <div class="card-body-icon">
                 <i class="fa fa-fw fa-shopping-cart"></i>
               </div>
-              <div class="mr-5">123 New Orders!</div>
+              <div class="mr-5">
+                
+                      <?php
+
+                          $user = 'rajeev@gmail.com';
+                          $sname = "FORD";
+                          $q = "Select * from userstocks where email='".$user."' and sname ='".$sname."'";
+                          $res = mysqli_query($con,$q);
+                          $no = 0;
+                          echo '<h1>FORD</h1><br />';
+                          if ($res->num_rows > 0) {
+                              // output data of each row
+                              while($row = $res->fetch_assoc()) {
+                                if($row['buyorsell'] === 'buy'){
+                                  $no += $row['quantity'];
+                                }
+                                else{
+                                  $no -= $row['quantity'];
+                                }
+                              }
+                          } 
+                          echo "<h1>Stock_Count : " . $no.  "</h1>";  
+                          
+    
+                  ?>
+
+              </div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="#">
               <span class="float-left">View Details</span>
@@ -395,7 +464,33 @@
               <div class="card-body-icon">
                 <i class="fa fa-fw fa-support"></i>
               </div>
-              <div class="mr-5">13 New Tickets!</div>
+              <div class="mr-5">
+                
+                    <?php
+
+                          $user = 'rajeev@gmail.com';
+                          $sname = "TESLA";
+                          $q = "Select * from userstocks where email='".$user."' and sname ='".$sname."'";
+                          $res = mysqli_query($con,$q);
+                          $no = 0;
+                          echo '<h1>TESLA</h1><br />';
+                          if ($res->num_rows > 0) {
+                              // output data of each row
+                              while($row = $res->fetch_assoc()) {
+                                if($row['buyorsell'] === 'buy'){
+                                  $no += $row['quantity'];
+                                }
+                                else{
+                                  $no -= $row['quantity'];
+                                }
+                              }
+                          } 
+                          echo "<h1>Stock_Count : " . $no.  "</h1>";  
+                          
+    
+                  ?>
+
+              </div>
             </div>
             <a class="card-footer text-white clearfix small z-1" href="#">
               <span class="float-left">View Details</span>
@@ -424,18 +519,17 @@
         <div class="row">
           
 
-          <div class="container col-md-6">
+          <div class=" col-md-3 col-sm-offset-1">
               <script type="text/javascript">var _mcq=["4","4954"];</script><span id='_mc_mg4'></span><script language="JavaScript" src="http://stat1.moneycontrol.com/mcjs/common/mc_widget.js"></script><noscript><a href="http://www.moneycontrol.com/india/stockpricequote/computerssoftware/infosys/IT">Infosys</a></noscript>
           </div>
 
-          <div class="col-md-6 " id="recommend">
-                <div class="row alert-success" style="height: 200px;" id="recommend">
-                    <h4>Recommended Stocks</h4>
-              </div>
-              <div class="row alert-danger" style="height: 200px;" id="not_recommend">
-                    <h4>Risky Stocks</h4>
-              </div>
+          <div class="  col-md-3 col-sm-offset-1 alert-success " id="recommend">
+                <h4>Recommended Stocks</h4>
           </div>
+          <div class="container col-md-3 alert-danger "  id="not_recommend">
+                <h4>Risky Stocks</h4>
+          </div>
+          
 
 
       </div>

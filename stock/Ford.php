@@ -36,15 +36,13 @@
           </a>
         </li>
         
-        
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
-          <a class="nav-link" id="TCS"  href="TCS.php">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
+          <a class="nav-link" id="NSE"  href="TCS.php">
             <i class="fa fa-fw fa-bank"></i>
             <span class="nav-link-text">TCS</span>
           </a>
         </li>
-
-         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" id="TCS"  href="GM.php">
             <i class="fa fa-fw fa-bank"></i>
             <span class="nav-link-text">GM</span>
@@ -69,7 +67,6 @@
             <span class="nav-link-text">VW</span>
           </a>
         </li>
-
         <!--
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Components">
           <a class="nav-link nav-link-collapse collapsed" data-toggle="collapse" href="#collapseComponents" data-parent="#exampleAccordion">
@@ -268,29 +265,26 @@
             <a class="nav-item nav-link" id="nav-twitter-tab" data-toggle="tab" href="#nav-twitter" role="tab" aria-controls="nav-contact" aria-selected="false">Twitter Analysis</a>
           </div>
         </nav>
-        <div class="tab-content" id="nav-tabContent" style="margin-top: 30px">
+        <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-news" role="tabpanel" aria-labelledby="nav-home-tab">
-                <div class="row">
-                  <div class="col-md-7">
-                  <img src="img/info_news_graph.PNG" alt="info_news_graph" />
+                
+                  <div class="container">
+                  <img src="img/" alt="info_news_graph" />
                   </div>
-                  <div class="col-md-3 " style="margin-top: 50px">
-                    <h1>Accuracy</h1>
-                    <img src="img/infosys_news_Accuracy.PNG" alt="accuracy" />
-                  </div>
-                </div>
+                  
           </div>
           <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-profile-tab">
                 
-                  <div class="container " >
-                    <img width="100%" height="375px" src="img/hist_inf_lstm1.PNG" alt="accuracy" />
+                  <div class="container">
+                  <img width="100%" src="img/" alt="Hist_info_lstm_pic" />
                 </div>
+                 
               
           </div>
           <div class="tab-pane fade" id="nav-twitter" role="tabpanel" aria-labelledby="nav-contact-tab">
                
                   <div class="container">
-                  <img src="img/Anfo_tweet.png" alt="Hist_info_lstm_pic" />
+                  <img src="img/ford_tweet.png" alt="Hist_info_lstm_pic" />
                 </div>
                   
               
@@ -298,7 +292,7 @@
       </div>
 
 
-        <<div class="container-fluid"  style="margin-top: 30px;">
+        <div class="container-fluid"  style="margin-top: 30px;">
 
             <div class="row alert-info">
 

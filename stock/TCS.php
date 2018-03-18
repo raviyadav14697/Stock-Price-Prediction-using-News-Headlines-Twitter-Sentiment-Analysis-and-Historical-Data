@@ -36,16 +36,36 @@
           </a>
         </li>
         
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Charts">
-          <a class="nav-link" id="NSE"  href="NSE.php">
-            <i class="fa fa-fw fa-bank"></i>
-            <span class="nav-link-text">NSE</span>
-          </a>
-        </li>
+        
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
           <a class="nav-link" id="TCS"  href="TCS.php">
             <i class="fa fa-fw fa-bank"></i>
             <span class="nav-link-text">TCS</span>
+          </a>
+        </li>
+         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" id="TCS"  href="GM.php">
+            <i class="fa fa-fw fa-bank"></i>
+            <span class="nav-link-text">GM</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" id="TCS"  href="Ford.php">
+            <i class="fa fa-fw fa-bank"></i>
+            <span class="nav-link-text">Ford</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" id="TCS"  href="TESLA.php">
+            <i class="fa fa-fw fa-bank"></i>
+            <span class="nav-link-text">TESLA</span>
+          </a>
+        </li>
+        
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Tables">
+          <a class="nav-link" id="TCS"  href="VW.php">
+            <i class="fa fa-fw fa-bank"></i>
+            <span class="nav-link-text">VW</span>
           </a>
         </li>
 
@@ -249,41 +269,54 @@
         </nav>
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="nav-news" role="tabpanel" aria-labelledby="nav-home-tab">
-                 <div class="row">
-                  <div class="col-md-8">
-                  <img src="img/" alt="Hist_info_lstm_pic" />
-                </div>
-                  <div class="col-md-4">
-                    <img src="img/" alt="accuracy" />
-                </div>
-              </div>
-          </div>
+              <div class="row">
+                    <div class="col-md-8">
+                    <img src="img/" alt="Hist_info_lstm_pic" />
+                  </div>
+                    <div class="col-md-4">
+                      <img src="img/" alt="accuracy" />
+                  </div>
+              </div>   
+           </div>
+        
           <div class="tab-pane fade" id="nav-history" role="tabpanel" aria-labelledby="nav-profile-tab">
-                 <div class="row">
-                  <div class="col-md-8">
-                  <img src="img/" alt="Hist_info_lstm_pic" />
+
+               
+                  <div class="container" style="margin-top: 30px">
+                  <img src="img/hist_lstm_tcs.PNG" alt="Hist_info_lstm_pic" />
                 </div>
-                  <div class="col-md-4">
-                    <img src="img/" alt="accuracy" />
-                </div>
-                </div>   
-               </div>
+
+            </div>
+              
           <div class="tab-pane fade" id="nav-twitter" role="tabpanel" aria-labelledby="nav-contact-tab">
-                  <div class="row">
-                  <div class="col-md-8">
-                  <img src="img/" alt="Hist_info_lstm_pic" />
+                  
+                
+                  <div class="container " style="margin-top: 30px">
+                  <img src="img/tcs_tweet.PNG" alt="pic" />
                 </div>
-                  <div class="col-md-4">
-                    <img src="img/" alt="accuracy" />
-                </div>
-          </div>
         </div>
 
         <div class="container-fluid"  style="margin-top: 30px;">
-            <div class="alert-info">
-                  Summary of all methods is :-
+
+            <div class="row alert-info">
+
+                  <div class="col-md-6">
+                      <h1>Actual Price</h1>
+                      <br>
+                      <h1>1246.50</h1>
+
+                  </div>
+
+                  <div class="col-md-6">
+                      <h1>Predicted Price</h1>
+                      <br>
+                      <h1>1253.21</h1>
+                      <i class="fa fa-fw fa-up"></i>
+
+                  </div>
             </div>
         </div>
+      </div>
         <!--
         <div class="col-xl-3 col-sm-6 mb-3">
           <div class="card text-white bg-primary o-hidden h-100">
